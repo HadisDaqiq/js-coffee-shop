@@ -55,20 +55,31 @@
 
     // Set these variables to their DOM elements
 
-    const coffeeImage;
-    const revenueMessage;
+const coffeeImage = document.querySelector('#coffee-image');
 
-    // use this JavaScript object in further study step
-
-    const prices = {
-      'brew': 2.05,
-      'espresso': 3.25,
-      'latte': 4.15,
-      'hot chocolate': 2.50
-    };
+coffeeImage.setAttribute('src', '/static/coffee_beans.jpg');
+//let revenueMessage;
 
 
-  </script>
+
+
+coffeeImage.addEventListener('click', setTimeout(function() {
+    coffeeImage.setAttribute('src', '/static/coffee_mug.jpg')
+    }, 1500));
+
+
+
+// use this JavaScript object in further study step
+
+const prices = {
+     'brew': 2.05,
+     'espresso': 3.25,
+     'latte': 4.15,
+  'hot chocolate': 2.50
+};
+
+
+</script>
 
 </body>
 </html>
